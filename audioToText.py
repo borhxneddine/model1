@@ -1,7 +1,9 @@
 import speech_recognition as sr
 from flask import Flask, request, jsonify
 
+
 app = Flask(__name__)
+
 
 # Initialize the recognizer
 recognizer = sr.Recognizer()
@@ -27,4 +29,4 @@ def transcribe_audio():
         return jsonify({'error': f'Error during speech recognition: {e}'}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)  # Run the Flask app in debug mode
+    app.run(host='0.0.0.0')  # Run the Flask app in debug mode

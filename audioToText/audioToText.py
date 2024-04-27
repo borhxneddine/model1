@@ -1,8 +1,10 @@
 import speech_recognition as sr
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
 
+CORS(app)
 # Initialize the recognizer
 recognizer = sr.Recognizer()
 
@@ -29,4 +31,4 @@ def transcribe_audio():
         return jsonify({'error': f'Unsupported audio file format: {e}'}), 400
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')  # Run the Flask app in debug mode
+    app.run(host="0.0.0.0",port=5001)

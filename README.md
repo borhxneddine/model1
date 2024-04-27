@@ -19,6 +19,9 @@ This tool combines FILE processing capabilities with conversational AI interacti
 
 7 Image Description Model (Gemini): Integrates OCR technology with generative AI capabilities to describe the content of images. This model analyzes image content and generates descriptive summaries based on the recognized objects, scenes, or text within the images.
 
+8 ChatBot :/initialize (POST): Initializes the API and returns a success message.
+/ocr (POST): Accepts an question , processes it using gemini , and returns response text as JSON
+
 ### Endpoints and Request Body
 
 1. **GET /get_pdf_text**

@@ -5,12 +5,18 @@
 ### Purpose
 This tool combines FILE processing capabilities with conversational AI interaction to enable users to extract insights from FILE documents and interact with a generative AI model seamlessly. It serves as a versatile utility for both document analysis and conversational interactions.
 ### Models
+
 1 PDF Processor: Utilizes PyPDF2 library for extracting text from PDF documents. The extracted text is then split into smaller, manageable chunks for further processing.
 2 Conversational AI Model: Integrates Google's generative AI API to create a conversational retrieval chain. This model is designed to respond to user queries and engage in meaningful conversations based on the input.
+
 3 Audio Transcription Model: Utilizes the SpeechRecognition library to transcribe audio files into text. This model supports multiple languages and provides accurate transcriptions for various audio formats.
+
 4 Parking Ticket Summary Generator: Utilizes a conversational AI model to generate detailed parking ticket summaries based on provided data. It gathers relevant information such as date, time, location, and additional notes to create comprehensive summaries.
+
 5 Executive Summary Generator: Employs a conversational AI model to act as a virtual executive assistant, producing detailed summaries based on incoming data. It extracts key points, action items, and meeting objectives to create concise yet informative executive summaries.
+
 6 Image OCR: Performs optical character recognition (OCR) on images to extract text. This model is useful for digitizing text content from images, enabling further processing and analysis.
+
 7 Image Description Model (Gemini): Integrates OCR technology with generative AI capabilities to describe the content of images. This model analyzes image content and generates descriptive summaries based on the recognized objects, scenes, or text within the images.
 
 ### Endpoints and Request Body
